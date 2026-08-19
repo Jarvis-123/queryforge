@@ -21,9 +21,9 @@
       ]
     },
     {
-      "source": "/og-share-v3.png",
+      "source": "/og-share-v4.jpg",
       "headers": [
-        { "key": "Content-Type", "value": "image/png" },
+        { "key": "Content-Type", "value": "image/jpeg" },
         {
           "key": "Cache-Control",
           "value": "public, max-age=86400, stale-while-revalidate=604800"
