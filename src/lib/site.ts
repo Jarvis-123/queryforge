@@ -5,4 +5,7 @@ export const site = {
   ogTitle: "QueryForge — citation-first document Q&A",
   ogDescription:
     "Open-source intent routing + retrieval + source-linked answers over a markdown corpus.",
+  ogImagePath: "/og-share-v2.jpg",
+  ogImageWidth: 2400,
+  ogImageHeight: 1254,
 } as const;
