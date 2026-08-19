@@ -1,14 +1,35 @@
 import type { Metadata } from "next";
+import { site } from "@/lib/site";
 import "./globals.css";
 
+const ogImageUrl = `${site.siteUrl}/linkedin-share.jpg`;
+
 export const metadata: Metadata = {
-  title: "QueryForge — citation-first document Q&A",
-  description:
-    "Open-source intent routing + retrieval + source-linked answers over a markdown corpus. Domain-agnostic demo.",
+  metadataBase: new URL(site.siteUrl),
+  title: site.ogTitle,
+  description: site.description,
+  robots: { index: true, follow: true },
   openGraph: {
-    title: "QueryForge",
-    description: "Citation-first document Q&A demo",
     type: "website",
+    url: site.siteUrl,
+    title: site.ogTitle,
+    description: site.ogDescription,
+    siteName: site.title,
+    images: [
+      {
+        url: ogImageUrl,
+        width: 1200,
+        height: 627,
+        alt: site.title,
+        type: "image/jpeg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: site.ogTitle,
+    description: site.ogDescription,
+    images: [ogImageUrl],
   },
 };
 
