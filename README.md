@@ -4,6 +4,8 @@
 
 Domain-agnostic open-source demo. The sample corpus is fictional **Acme Corp** handbook content (no employer IP).
 
+**Repository:** https://github.com/Jarvis-123/queryforge · **Live demo:** https://queryforge-nu.vercel.app
+
 ## Why this exists
 
 Internal ops hubs need answers that **cite procedure**, not guess. QueryForge is the public extract of that pattern:
