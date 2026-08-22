@@ -12,6 +12,8 @@ const EXAMPLES = [
   "What is the remote work policy?",
 ];
 
+const REPO_URL = "https://github.com/Jarvis-123/queryforge";
+
 export function QueryForgeDemo() {
   const [query, setQuery] = useState("");
   const [loading, setLoading] = useState(false);
@@ -156,6 +158,16 @@ export function QueryForgeDemo() {
             Amit Singh
           </a>
           . Public extract of a citation-first RAG pattern used in internal ops tooling.
+        </p>
+        <p className="mt-2">
+          <a
+            href={REPO_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded text-[var(--foreground)] underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]"
+          >
+            View source on GitHub
+          </a>
         </p>
       </footer>
     </div>
